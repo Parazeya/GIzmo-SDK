@@ -19,7 +19,7 @@ import { GizmoSDK } from 'gizmo-sdk';
 
 const config = {
     ip: '127.0.0.1',
-    port: 81,
+    port: 80,
     ssl: false,
     username: 'admin',
     password: 'admin',
