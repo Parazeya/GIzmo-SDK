@@ -1,6 +1,6 @@
 import { GizmoClient } from '../GizmoClient.js';
 
-export class Applicationdeployments {
+export class ApplicationDeployments {
     constructor(client) {
         this.client = client;
     }

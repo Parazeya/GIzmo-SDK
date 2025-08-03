@@ -14,7 +14,6 @@ export class GizmoClient {
     }
 
     async request(method, url, data = {}, params = {}) {
-        // URL формируется только из относительного пути, версия не подставляется
         const finalUrl = url.startsWith('/') ? url : `/${url}`;
         try {
             const res = await this.axios({
@@ -25,7 +24,6 @@ export class GizmoClient {
             });
             return res.data;
         } catch (error) {
-            // Пробрасываем ошибку наружу для обработки пользователем
             throw error;
         }
     }

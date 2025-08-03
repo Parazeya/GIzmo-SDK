@@ -47,6 +47,8 @@ import { UserGroups as UserGroupsV2 } from './v2/UserGroups.js';
 import { Users as UsersV2 } from './v2/Users.js';
 import { Variables as VariablesV2 } from './v2/Variables.js';
 import { Verifications as VerificationsV2 } from './v2/Verifications.js';
+// v3
+// Unusable, waiting for API updates
 
 function createV1Categories(client) {
     return {
@@ -105,14 +107,17 @@ function createV2Categories(client) {
     };
 }
 
+function createV3Categories(client) {
+    return {
+        
+    };
+}
+
 export class GizmoSDK {
     constructor(config) {
         this.client = new GizmoClient(config);
         this.v1 = createV1Categories(this.client);
         this.v2 = createV2Categories(this.client);
-        // Для v3 аналогично, если появится swagger
-        this.v3 = {};
-
-        // Доступ к категориям только через sdk.v1, sdk.v2, sdk.v3
+        this.v3 = createV3Categories(this.client);
     }
 }
