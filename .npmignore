@@ -14,7 +14,7 @@ src/openapi/
 src/generator/
 __mocks__/
 __tests__/
-package-lock.json*
+package-lock.json
 
 # Keep only SDK sources and main files
 !src/
