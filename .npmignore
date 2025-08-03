@@ -1,0 +1,24 @@
+# Ignore test files and configs
+*.test.js
+test.js
+coverage/
+.eslintrc*
+.vscode/
+.git/
+.gitignore
+README.md
+node_modules/
+.env
+*.log
+src/openapi/
+src/generator/
+__mocks__/
+__tests__/
+
+# Keep only SDK sources and main files
+!src/
+!src/index.js
+!src/v1/
+!src/v2/
+!src/v3/
+!package.json
