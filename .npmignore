@@ -17,6 +17,8 @@ __tests__/
 *package-lock.json
 package-lock*
 package-lock.json
+docs.*
+*docs.*
 
 # Keep only SDK sources and main files
 !src/

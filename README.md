@@ -30,8 +30,8 @@ const sdk = new GizmoSDK(config);
 // Example: Get users (v1)
 const users = await sdk.v1.users.getUsers();
 
-// Example: Get products (v3)
-const products = await sdk.v3.products.getProducts();
+// Example: Get products (v2)
+const products = await sdk.v2.products.getAll();
 ```
 
 ## Custom Requests
@@ -40,7 +40,7 @@ You can use the underlying client for custom requests:
 
 ```js
 const client = sdk.client;
-const result = await client.request('get', '/v3.0/any-endpoint', { body1: "value" }, { param1: 'value' });
+const result = await client.request('get', '/v2.0/any-endpoint', { body1: "value" }, { param1: 'value' });
 ```
 
 ## Contributing
