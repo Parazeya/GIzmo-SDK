@@ -23,7 +23,6 @@ const config = {
     ssl: false,
     username: 'admin',
     password: 'admin',
-    version: 3 // 1, 2, or 3
 };
 
 const sdk = new GizmoSDK(config);
